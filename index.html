@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript Tasks App</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+
+<body>
+
+	<!-- NAVIGATION -->
+	<nav class="navbar navbar-light bg-light">
+		<div class="container">
+			<a href="#" class="navbar-brande">Task App</a>
+			<ul>
+				<li>Menu 1</li>
+				<li>Menu 2</li>
+				<li>Menu 3</li>
+			</ul>
+
+		</div>		
+	</nav>
+
+	<div class="container">
+		<div class="row pt-5">  <!-- pt-5: Espaciado en la FILA -->
+			
+			<div class="col-md4">				
+				<div class="card">
+					<div class="card-body">
+						<form id="formTask">
+							<div class="form-group">
+								<input type="text" id="title" placeholder="Add a Todo" class="form-control">
+							</div>
+							<div class="form-group">
+								<textarea  id="description" rows="8" cols="80" class="form-control" placeholder="Add a Description"></textarea>
+							</div>
+							<button type="submit" class="btn btn-primary btn-block">
+								Save
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md8">				
+				<div id="tasks"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- SCRIPTS: enlazo app.js -->
+	<script src="app.js"></script>
+	
+</body>
+</html>
